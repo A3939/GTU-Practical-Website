@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Circular Navigation - Demo 2 | Codrops</title>
+	<meta name="description"
+		content="Circular Navigation Styles - Building a Circular Navigation with CSS Transforms | Codrops " />
+	<meta name="keywords" content="css transforms, circular navigation, round navigation, circular menu, tutorial" />
+	<meta name="author" content="Sara Soueidan for Codrops" />
+	<link rel="shortcut icon" href="../favicon.ico">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<link rel="stylesheet" type="text/css" href="css/component2.css" />
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="prism.css">
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+</head>
+
+<body>
+
+<section id="front">
+	<div class="container">
+		<!-- Top Navigation -->
+
+
+		<div class="component">
+			<h2>ADITYA</h2>
+			<!-- Start Nav Structure -->
+			<button class="cn-button" id="cn-button">Menu</button>
+			<div class="cn-wrapper" id="cn-wrapper">
+				<ul>
+					<li><a href="#"><span>About</span></a></li>
+					<li><a href="#java"><span>Java</span></a></li>
+					<li><a href="#os"><span>OS</span></a></li>
+					<li><a href="#"><span>PEM</span></a></li>
+					<li><a href="#"><span>COA</span></a></li>
+					<li><a href="#contact"><span>Contact</span></a></li>
+					<li><a href="#contact"><span>Follow</span></a></li>
+				</ul>
+			</div>
+			<!-- End of Nav Structure -->
+		</div>
+	</div><!-- /container -->
+
+
+	<!-- home section  -->
+	<section id="home">
+		<div class="home">
+			<h1>Welcome to the world of copycats</h1>
+			<p>Learning without practice is of no use. Brain has a nature of adapting solutions by experiencing them
+				andnot just by Copy them.</p>
+		</div>
+	</section>
+</section>
+	<!-- service section  -->
+
+
+
+
+	<!-- java section  -->
+	<section id="java">
+
+		<div class="wrapper">
+			<h1 class="title">Java Practicals</h1>
+			<h3>Select Practical :</h3>
+			<div class="box">
+				<select id="PrList">
+					<option value="pr_1">Practical : 1</option>
+					<option value="pr_2">Practical : 2</option>
+					<option value="pr_3">Practical : 3</option>
+					<option value="pr_4">Practical : 4</option>
+					<option value="pr_5">Practical : 5</option>
+					<option value="pr_6">Practical : 6</option>
+					<option value="pr_7">Practical : 7</option>
+					<option value="pr_8">Practical : 8</option>
+					<option value="pr_9">Practical : 9</option>
+					<option value="pr_10">Practical : 10</option>
+				</select>
+			</div>
+		</div>
+
+
+
+
+
+		<div class="content">
+
+			<div class="code">
+
+				<div id="pr_1" class="prCode">
+
+					<div class="display">
+						<h2>Practical : 1</h2>
+						<h3>AIM :</h3>
+						<p>Write a Program that displays Welcome to Java, Learning Java Now and Programming is fun.</p>
+					</div>
+
+					<pre>
+							<code class="language-java">
+							public class PR_1{
+								public static void main(String[] args) {
+									System.out.println("Welcome To Java, Lerning Java Now and Progrmaing is fun");
+									}
+							}
+							</code>
+						</pre>
+				</div>
+
+
+				<div id="pr_2" class="prCode">
+
+					<div class="display">
+						<h2>Practical : 2</h2>
+						<h3>AIM :</h3>
+						<p>Write a program that solves the following equation and displays the value x and y: <br>
+							1) 3.4x+50.2y=44.5 <br>
+							2) 2.1x+.55y=5.9 <br>
+							(Assume Cramer’s rule to solve equation
+							ax+by=e x=ed-bf/ad-bc
+							cx+dy=f y=af-ec/ad-bc )</p>
+					</div>
+
+
+					<pre>
+							<code class="language-java">
+								public class PR_2 {
+
+									public static void main(String[] args){
+										double a=3.4,b=50.2,c=2.1,d=0.55,e=44.5,f=5.9;
+										double x = (e*d-b*f)/(a*d-b*c);
+										double y = (a*f-e*c)/(a*d-b*c);
+								
+								
+										System.out.println("x = "+x+"y = "+y);
+									
+									}
+								}
+							</code>
+						</pre>
+				</div>
+
+
+				<div id="pr_3" class="prCode">
+
+					<div class="display">
+						<h2>Practical : 3</h2>
+						<h3>AIM :</h3>
+						<p>Write a program that reads a number in meters, converts it to feet, and displays the result.
+						</p>
+					</div>
+
+
+					<pre>
+							<code class="language-java">
+								import java.util.Scanner;
+								public class PR_3 {
+									public static void main(String[] args){
+										Scanner input = new Scanner(System.in);
+								
+										System.out.print("Enter Number in Meter: ");
+										double m = input.nextDouble();
+										double f=m*3.2808;
+										System.out.println("Result in feet: "+f);
+								
+									}
+								}
+								
+							</code>
+						</pre>
+				</div>
+
+
+				<div id="pr_4" class="prCode">
+
+					<div class="display">
+						<h2>Practical : 4</h2>
+						<h3>AIM :</h3>
+						<p>Body Mass Index (BMI) is a measure of health on weight. It can be calculated by taking your
+							weight in kilograms and dividing by the square of your height in meters. Write a program
+							that prompts the user to enter a weight in pounds and height in inches and displays the BMI.
+							<br>
+							Note:- 1 pound=.45359237 Kg and 1 inch=.0254 meters.
+						</p>
+					</div>
+
+
+					<pre>
+							<code class="language-java">
+								import java.util.Scanner;
+								public class PR_4 {
+								
+									public static void main(String[] args){
+										Scanner sc = new Scanner(System.in);
+								
+										System.out.print("Enter Your Weight in pound : ");
+										float w = sc.nextFloat();
+								
+										System.out.print("Enter Your Height in Inch : ");
+										float h = sc.nextFloat();
+								
+										double BMI = (w*0.4535) / ((h*0.0254)*(h*0.0254));
+								
+										System.out.println("Your BMI is: "+BMI);
+								
+									} 
+								}					
+							</code>
+						</pre>
+				</div>
+
+
+				<div id="pr_5" class="prCode">
+
+					<div class="display">
+						<h2>Practical : 5</h2>
+						<h3>AIM :</h3>
+						<p>Write a program that prompts the user to enter three integers and display the integers in
+							decreasing order.</p>
+					</div>
+
+
+					<pre>
+							<code class="language-java">
+								import java.util.Scanner;
+								public class PR_5 {
+									public static void main(String[] args){
+										Scanner sc = new Scanner(System.in);
+								
+										System.out.println("Enter three Number: ");
+										int x = sc.nextInt();
+										int y = sc.nextInt();
+										int z = sc.nextInt();
+										int temp;
+								
+										
+										if(x<y){
+											temp = x;
+											x = y;
+											y = temp;
+										}
+										if(z>y){
+											if(z>x){
+												temp = z;
+												z = y;
+												y = x;
+												x = temp;
+											}
+											else{
+												temp = z;
+												z = y;
+												y = temp;
+											}
+										}
+										System.out.println("Number in Desending Order: \n"+x+"\n"+y+"\n"+z);
+										
+									}
+								}					
+							</code>
+						</pre>
+				</div>
+
+
+
+				<div id="pr_6" class="prCode">
+
+					<div class="display">
+						<h2>Practical : 6</h2>
+						<h3>AIM :</h3>
+						<p>Write a program that prompts the user to enter a letter and check whether a letter is a vowel
+							or constant.</p>
+					</div>
+
+
+					<pre>
+							<code class="language-java">
+								import java.util.Scanner;
+								public class PR_6 {
+									public static void main(String[] args){
+										Scanner sc = new Scanner(System.in);
+								
+										System.out.println("Enter a char to check vowel : ");
+										char c = sc.next().charAt(0);
+								
+										switch(Character.toLowerCase(c)){
+											case 'a':
+											case 'e':
+											case 'i':
+											case 'o':
+											case 'u':
+													System.out.println( c+ " is vowel char.");
+													break;
+											default:
+													System.out.println( c+" is not a vowel char.");
+										}
+								
+									}
+								}					
+							</code>
+						</pre>
+				</div>
+
+
+				<div id="pr_7" class="prCode">
+
+					<div class="display">
+						<h2>Practical : 7</h2>
+						<h3>AIM :</h3>
+						<p>Assume a vehicle plate number consists of three uppercase letters followed by four digits.
+							Write a program to generate a plate number.</p>
+					</div>
+
+
+					<pre>
+							<code class="language-java">
+								public class PR_7 {
+
+									public static void main(String[] args){
+										
+										int a1 = 'A' + (int) (Math.random() * ('Z' - 'A'));
+										int a2 = 'A' + (int) (Math.random() * ('Z' - 'A'));
+										int a3 = 'A' + (int) (Math.random() * ('Z' - 'A'));
+								
+										int dig1 = (int) (Math.random() * 10);
+										int dig2 = (int) (Math.random() * 10);
+										int dig3 = (int) (Math.random() * 10);
+										int dig4 = (int) (Math.random() * 10);
+								
+										System.out.println("" + (char) (a1) + ((char) (a2)) + ((char) (a3)) + dig1 + dig2 + dig3 + dig4);
+									}
+								}							
+							</code>
+						</pre>
+				</div>
+
+
+				<div id="pr_8" class="prCode">
+
+					<div class="display">
+						<h2>Practical : 8</h2>
+						<h3>AIM :</h3>
+						<p>Write a program that reads an integer and displays all its smallest factors in increasing
+							order. For example if input number is 120, the output should be as follows:2,2,2,3,5.</p>
+					</div>
+
+
+					<pre>
+							<code class="language-java">
+								import java.util.Scanner;
+								public class PR_8 {
+									
+									public static void main(String[] args){
+										Scanner sc = new Scanner(System.in);
+								
+										int div = 2;
+								
+										System.out.println("Enter a Number : ");
+										int number = sc.nextInt();
+								
+										while(number > 1){
+											if(number % div == 0){
+												System.out.print(div+",");
+												number = number / div;
+											}else{
+												div++;
+											}
+										}
+									}
+								}
+								
+							</code>
+						</pre>
+				</div>
+
+
+				<div id="pr_9" class="prCode">
+
+					<div class="display">
+						<h2>Practical : 9</h2>
+						<h3>AIM :</h3>
+						<p>Write a method with following method header.
+							public static int gcd(int num1, int num2)
+							Write a program that prompts the user to enter two integers and compute the gcd of two
+							integers.</p>
+					</div>
+
+
+					<pre>
+							<code class="language-java">
+								import java.util.Scanner;
+
+								public class PR_9 {
+									public static void main(String[] args) {
+										Scanner sc = new Scanner(System.in);
+								
+										System.out.println("Enter First Number: ");
+										int num1 = sc.nextInt();
+								
+										System.out.println("Enter Second Number: ");
+										int num2 = sc.nextInt();
+								
+										System.out.println("GCD of "+num1+" and "+num2+" is "+gcd(num1,num2));
+									}
+									public static int gcd(int num1,int num2){
+										while(num1 != num2){
+											if(num1>num2){
+												num1 = num1 - num2;
+											}
+											else{
+												num2 = num2 - num1;
+											}
+										}
+										return num1;
+									}
+								}
+							</code>
+						</pre>
+				</div>
+
+
+
+				<div id="pr_10" class="prCode">
+
+					<div class="display">
+						<h2>Practical : 10</h2>
+						<h3>AIM :</h3>
+						<p>Write a test program that prompts the user to enter ten numbers, invoke a method to reverse
+							the numbers, display the numbers.</p>
+					</div>
+
+
+					<pre>
+							<code class="language-java">
+								import java.util.Scanner;
+
+								public class PR_10 {
+									public static void main(String[] args) {
+										Scanner sc = new Scanner(System.in);
+								
+										int i=0;
+										int num_arr[] = new int[10];
+										for(i=0;i<10;i++){
+											System.out.print("Number at Position "+(i+1)+" :");
+											num_arr[i]=sc.nextInt();
+										}
+										reversenum(num_arr);
+										for(i=0;i<10;i++){
+											System.out.println("Value at Position "+(i+1)+":"+num_arr[i]);
+								
+										}
+									}
+									public static void reversenum(int arr[]) {
+										int j=0,temp;
+										while(j<=arr.length/2){
+											temp = arr[j];
+											arr[j] = arr[arr.length-1-j];
+											arr[arr.length-1-j] = temp;
+											j++;
+										}
+										
+									}
+								}
+								
+							</code>
+						</pre>
+				</div>
+
+			</div>
+		</div>
+
+	</section>
+
+	<!-- OS section  -->
+	<section id="os">
+
+		<div class="wrapper">
+			<h1 class="title">Operating System Practicals</h1>
+			<h3>Select Practical :</h3>
+			<div class="OSbox">
+				<select id="OSPrList">
+					<option value="os_pr_2">Practical : 2</option>
+					<option value="os_pr_3">Practical : 3</option>
+					<option value="os_pr_4">Practical : 4</option>
+					<option value="os_pr_5">Practical : 5</option>
+					<option value="os_pr_6">Practical : 6</option>
+					<option value="os_pr_7">Practical : 7</option>
+					<option value="os_pr_8">Practical : 8</option>
+					<option value="os_pr_9">Practical : 9</option>
+					<option value="os_pr_10">Practical : 10</option>
+				</select>
+			</div>
+		</div>
+
+
+		<div class="content">
+			<div class="code">
+
+
+				<div id="os_pr_2" class="OSprCode">
+
+					<div class="OSdisplay">
+						<h2>Practical : 2</h2>
+						<h3>AIM :</h3>
+						<p>Write a shell script to generate marksheet of a student. Take 3 subjects, calculate and
+							display total marks, percentage and Class obtained by the student.</p>
+					</div>
+
+
+					<pre>
+					<code class="language-java">
+						#!/bin/bash
+echo "***********************"
+echo "Marksheet for Student"
+echo "***********************"
+echo "Enter Marks of three subject"
+echo "Physics"
+read ph
+echo "Chemistry"
+read ch
+echo "Maths"
+read mt
+sum1=`expr $ph + $ch + $mt`
+echo "Sum of three subject is:"$sum1
+per=`expr $sum1 / 3`
+echo "Percentage:"$per
+if [ $per -ge 60 ]
+then
+        echo "You get Distinction"
+elif [ $per -ge 50 ]
+then
+        echo "You get First class"
+elif [ $per -ge 40 ]
+then
+        echo "You get Second class"
+else
+        echo "You get Fail"
+fi
+				
+					</code>
+				</pre>
+				</div>
+
+				<div id="os_pr_3" class="OSprCode">
+
+					<div class="OSdisplay">
+						<h2>Practical : 3</h2>
+						<h3>AIM :</h3>
+						<p>Write a shell script to display multiplication table of given number
+						</p>
+					</div>
+
+
+					<pre>
+					<code class="language-java">
+						clear
+  echo "which number to generate multiplication table"
+  read number
+  i=1
+  while [ $i -le 10 ]
+  do
+  echo " $number * $i =`expr $number \* $i ` "
+  i=`expr $i + 1`
+  done					
+					</code>
+				</pre>
+				</div>
+
+				<div id="os_pr_4" class="OSprCode">
+
+					<div class="OSdisplay">
+						<h2>Practical : 4</h2>
+						<h3>AIM :</h3>
+						<p>Write a shell script to find factorial of given number n.
+						</p>
+					</div>
+
+
+					<pre>
+					<code class="language-java">
+						#!/bin/bash
+echo "Enter a number"
+read num
+
+fact=1
+
+while [ $num -gt 1 ]
+do
+  fact=$((fact * num))  #fact = fact * num
+  num=$((num - 1))      #num = num - 1
+done
+
+echo "Result:" $fact
+					
+					</code>
+				</pre>
+				</div>
+
+				<div id="os_pr_5" class="OSprCode">
+
+					<div class="OSdisplay">
+						<h2>Practical : 5</h2>
+						<h3>AIM :</h3>
+						<p>Write a shell script which will accept a number b and display first n prime numbers as
+							output.
+						</p>
+					</div>
+
+
+					<pre>
+					<code class="language-java">
+						#!/bin/bash
+
+echo "enter the Last Number"
+read n
+echo "the prime no are:"
+m=2
+while [ $m -le $n ]
+do
+i=2
+flag=0
+while [ $i -le `expr $m / 2` ]
+do
+if [ `expr $m % $i` -eq 0 ]
+then
+flag=1
+break
+fi
+i=`expr $i + 1`
+done
+if [ $flag -eq 0 ]
+then
+echo $m
+fi
+m=`expr $m + 1`
+done
+						
+					</code>
+				</pre>
+				</div>
+
+				<div id="os_pr_6" class="OSprCode">
+
+					<div class="OSdisplay">
+						<h2>Practical : 6</h2>
+						<h3>AIM :</h3>
+						<p>Write a shell script which will generate first n fibonnacci numbers like: 1, 1, 2, 3, 5, 13,
+							...
+						</p>
+					</div>
+
+
+					<pre>
+					<code class="language-java">
+						#!/bin/bash
+
+clear
+echo "How many number of terms to be generated ?"
+read n
+x=0
+y=1
+i=2
+echo "Fibonacci Series up to $n terms :"
+echo "$x"
+echo "$y"
+while [ $i -lt $n ]
+do
+i=`expr $i + 1 `
+z=`expr $x + $y `
+echo "$z"
+x=$y
+y=$z
+don						
+					</code>
+				</pre>
+				</div>
+
+				<div id="os_pr_7" class="OSprCode">
+
+					<div class="OSdisplay">
+						<h2>Practical : 7</h2>
+						<h3>AIM :</h3>
+						<p>Write a menu driven shell script which will print the following menu and execute the given
+							task. <br>
+							a. Display calendar of current month <br>
+							b. Display today’s date and time <br>
+							c. Display usernames those are currently logged in the system <br>
+							d. Display your name at given x, y position <br>
+							e. Display your terminal numberbr <br>
+						</p>
+					</div>
+
+
+					<pre>
+					<code class="language-java">
+						#!/bin/bash
+choice=0
+
+while [ $choice -ne 4 ]
+do
+tput clear
+
+echo "1. Today date and time"
+echo "2. Total login user"
+echo "3. User Name"
+echo "4. Terminal No."
+echo "5. Exit"
+echo "Enter your choice"
+read i 
+case $i in
+1)
+cal ;;
+2)
+date ;;
+3)
+whoami ;;
+4)
+tput cup 10 10
+echo ADITYA ;;
+5)
+tty ;;
+6)
+exit ;;
+*) echo "Enter Valid Input" ;;
+esac
+					</code>
+				</pre>
+				</div>
+
+				<div id="os_pr_8" class="OSprCode">
+
+					<div class="OSdisplay">
+						<h2>Practical : 8</h2>
+						<h3>AIM :</h3>
+						<p>Write a shell script to read n numbers as command arguments and sort them in descending
+							order.
+						</p>
+					</div>
+
+
+					<pre>
+					<code class="language-java">
+						#!/bin/bash
+if [ $# -eq 0 ]
+then
+        echo "Enter valid Arguments"
+        exit
+fi
+
+> temp_file
+
+for i in $*
+do
+        echo "$i" >> temp_file
+done
+
+echo "Your sorted data:"
+sort -nr temp_file
+						
+					</code>
+				</pre>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+<!-- cennect with me  -->
+<section id="contact" class="getstarted" data-aos="zoom-out">
+	<div class="ctn-container">
+		<div class="ctn-text">
+			<h1>Get Connected With Aditya</h1>
+			<h2>Contact Number: 94 27 30 39 39</h2>
+			<p>Hii My name is Aditya Patel. I am Computer Scienc & Engineer studnet at Government Engineering College, Patan. If any quary regading this website email me. Thanks for visiting my site.</p>
+			<ul>
+				<li><a href="https://material.io/resources/color/#!/?view.left=0&view.right=0&primary.color=AD1457"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+				<li><a href="https://twitter.com/AdityaP62909088"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+				<li><a href="adityagpatel59@gmail.com"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+				<li><a href="https://www.linkedin.com/in/aditya-patel-357838198/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+				<li><a href="https://www.instagram.com/aditya_g_patel_234/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+			  </ul>
+		</div>
+	</div>
+</section>
+
+
+	
+
+		
+	</section> 
+
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<script>
+
+		// script for java section 
+		$(document).ready(function () {
+			$("#PrList").on('change', function () {
+				$(".prCode").hide();
+				$("#" + $(this).val()).fadeIn(700);
+			}).change();
+		});
+
+		// script for os section 
+		$(document).ready(function () {
+			$("#OSPrList").on('change', function () {
+				$(".OSprCode").hide();
+				$("#" + $(this).val()).fadeIn(700);
+			}).change();
+		});
+
+		// scrolling 
+		var scroll = new SmoothScroll('a[href*="#"]', {
+			speed: 1000,
+			speedAsDuration: true
+		});
+
+	</script>
+
+
+	<script src="js/polyfills.js"></script>
+	<script src="js/demo2.js"></script>
+	<script src="prism.js"></script>
+</body>
+
+</html>
